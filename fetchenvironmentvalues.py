@@ -35,7 +35,6 @@ class EnvironmentFetcher:
     @staticmethod
     def get_variable(env_var: EnvironmentVariables) -> str:
         return os.getenv(env_var.value, "")
-       # return os.environ.get(env_var.value, "")
     
     @staticmethod
     def get_contentUrls() -> list:

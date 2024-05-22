@@ -1,5 +1,3 @@
-#import configparser
-import sys
 import os
 from openai import AzureOpenAI
 from playsound import playsound
@@ -15,7 +13,6 @@ client = AzureOpenAI(
 )
 
 deployment_name = EnvironmentFetcher.get_variable(EnvironmentVariables.WHISPER_DEPLOYMENT_NAME) #This will correspond to the custom name you chose for your deployment when you deployed a model."
-#audio_test_file = pathlib.Path(__file__).parent.absolute() / "Samples/wikipediaOcelot.wav"
 audio_test_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Samples/wikipediaOcelot.wav")
 
 def play_audio():
