@@ -1,4 +1,4 @@
-# azureopenai-vision-speech-samples
+# Azure OpenAI GPT4 Vision, Whisper and Text to Speech Samples
 
 ## Setup Instructions
 
